@@ -1296,19 +1296,6 @@ img {
     }
 }
 
-.hero-buttons a,
-.section-subtitle,
-.contacto-form,
-.servicio-card,
-.testimonio-card,
-.oferta-card,
-.payment-card,
-.nosotros-image img,
-.galeria-item img {
-    animation-fill-mode: forwards;
-}
-
-
 @keyframes fadeIn {
     from {
         opacity: 0;
