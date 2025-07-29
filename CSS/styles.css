@@ -622,6 +622,7 @@ img {
 .oferta-precio {
     background-color: #edebdd80;
     padding: 20px;
+    margin-top: 20px;
     border-radius: var(--border-radius);
     margin-bottom: 25px;
     text-align: center;
@@ -1360,7 +1361,7 @@ img {
     }
     
     .oferta-content h3{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .galeria-item {
