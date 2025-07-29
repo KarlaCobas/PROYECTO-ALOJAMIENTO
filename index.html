@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospedaje Elegante</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Hospedaje Elegante - Alojamiento Premium</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Barra de navegación -->
     <header class="header">
         <div class="container">
             <a href="#" class="logo">Hospedaje<span>Elegante</span></a>
@@ -18,13 +17,11 @@
                 <span class="bar"></span>
             </button>
             <nav class="nav-menu">
-                <ul>
+                <ul class="nav-list">
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
                     <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
                     <li><a href="#galeria" class="nav-link">Galería</a></li>
-                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
-                    <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
+                    <li><a href="#comentarios" class="nav-link">Comentarios</a></li>
                     <li><a href="#pagos" class="nav-link">Pagos</a></li>
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
@@ -32,47 +29,42 @@
         </div>
     </header>
 
-    <!-- Sección main -->
-    <section id="inicio" class="main">
-        <div class="container">
-            <div class="main-content">
-                <h1>Experiencias de alojamiento inolvidables</h1>
-                <p>Descubre espacios únicos diseñados para tu comodidad y tranquilidad.</p>
+    <main>
+        <section id="inicio" class="main">
+            <div class="container">
+                <h1 class="main-title">Experiencias de alojamiento inolvidables</h1>
+                <p class="main-subtitle">Descubre espacios únicos diseñados para tu comodidad y tranquilidad.</p>
                 <div class="main-buttons">
-                    <a href="#servicios" class="btn btn-primary">Explorar opciones</a>
-                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                    <a href="#contacto" class="btn btn-primary animate-from-bottom">Explorar opciones</a>
+                    <a href="#galeria" class="btn btn-secondary animate-from-bottom">Contactar</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección Nosotros -->
-    <section id="nosotros" class="section nosotros">
-        <div class="container">
-            <h2 class="section-title">Sobre Nosotros</h2>
-            <p class="section-subtitle">Más de una década ofreciendo experiencias excepcionales</p>
+        <section id="nosotros" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <p class="section-subtitle">Más de una década ofreciendo experiencias excepcionales</p>
             
-            <div class="nosotros-grid">
-                <div class="nosotros-content">
-                    <h3>Nuestra filosofía</h3>
-                    <p>En Hospedaje Elegante, creemos que cada huésped merece una experiencia personalizada. Desde 2010, nos hemos dedicado a crear espacios que combinan comodidad, elegancia y calidez.</p>
-                    <p>Nuestro equipo está compuesto por expertos en hospitalidad que anticipan tus necesidades para ofrecerte un servicio impecable.</p>
-                    <ul class="nosotros-features">
+                <div class="about-content">
+                    <div class="about-text animate-from-left">
+                        <h3>Nuestra filosofía</h3>
+                        <p>En Hospedaje Elegante, creemos que cada huésped merece una experiencia personalizada. Desde 2010, nos hemos dedicado a crear espacios que combinan comodidad, elegancia y calidez.</p>
+                        <p>Nuestro equipo está compuesto por expertos en hospitalidad que anticipan tus necesidades para ofrecerte un servicio impecable.</p>
+                        <ul class="about-features">
                         <li><i class="fas fa-check-circle"></i> Atención personalizada 24/7</li>
                         <li><i class="fas fa-check-circle"></i> Diseño interior exclusivo</li>
                         <li><i class="fas fa-check-circle"></i> Ubicaciones privilegiadas</li>
-                    </ul>
-                </div>
-                <div class="nosotros-image">
-                    <div class="image-frame">
-                        <img src="assets/img/about.jpg" alt="About">
+                        </ul>
+                    </div>
+                    <div class="about-image animate-from-left">
+                        <img src="assets/img/about.jpg" alt="About" loading="lazy">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Sección Servicios -->
+        </section>
+        
+        <!-- Sección Servicios -->
     <section id="servicios" class="section servicios">
         <div class="container">
             <h2 class="section-title">Nuestros Servicios</h2>
@@ -161,132 +153,6 @@
         </div>
     </section>
 
-    <!-- Sección Galería -->
-    <section id="galeria" class="section galeria">
-        <div class="container">
-            <h2 class="section-title">Nuestros Espacios</h2>
-            <p class="section-subtitle">Descubre la elegancia de nuestros alojamientos</p>
-            
-            <div class="galeria-grid">
-                <div class="galeria-item">
-                    <img src="assets/img/ejecutiva2.jpg" alt="Ejecutiva2">
-                    <div class="galeria-overlay">
-                        <h3>Suite Ejecutiva</h3>
-                        <p>Amplios espacios para viajeros exigentes</p>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/img/sala.jpg" alt="Sala de estar">
-                    <div class="galeria-overlay">
-                        <h3>Áreas Comunes</h3>
-                        <p>Diseñadas para tu comodidad</p>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/img/premium2.jpg" alt="Premium2">
-                    <div class="galeria-overlay">
-                        <h3>Cabaña Premium</h3>
-                        <p>Privacidad y lujo en un mismo espacio</p>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/img/estandar2.jpg" alt="Habitación Estándar">
-                    <div class="galeria-overlay">
-                        <h3>Habitación Estándar</h3>
-                        <p>Confort a un precio accesible</p>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/img/restaurante.jpg" alt="Restaurante">
-                    <div class="galeria-overlay">
-                        <h3>Restaurante</h3>
-                        <p>Cocina gourmet con ingredientes locales</p>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/img/spa.jpg" alt="Spa">
-                    <div class="galeria-overlay">
-                        <h3>Área de Spa</h3>
-                        <p>Relájate y rejuvenece</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Testimonios -->
-    <section id="testimonios" class="section testimonios">
-        <div class="container">
-            <h2 class="section-title">Lo que dicen nuestros huéspedes</h2>
-            <p class="section-subtitle">Experiencias reales de quienes han disfrutado nuestros servicios</p>
-            
-            <div class="testimonios-slider">
-                <!-- Testimonio 1 -->
-                <div class="testimonio-card">
-                    <div class="testimonio-header">
-                        <img src="assets/img/testimonio1.jpg" alt="Testimonio1" class="testimonio-img">
-                        <div class="testimonio-info">
-                            <h3>María González</h3>
-                            <div class="testimonio-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonio-body">
-                        <p>"La suite ejecutiva superó todas mis expectativas. El servicio fue impecable y la atención al detalle increíble. Definitivamente volveré en mi próximo viaje de negocios."</p>
-                        <span class="testimonio-date">Enero 2023</span>
-                    </div>
-                </div>
-                
-                <!-- Testimonio 2 -->
-                <div class="testimonio-card">
-                    <div class="testimonio-header">
-                        <img src="assets/img/testimonio2.jpg" alt="Testimonio2" class="testimonio-img">
-                        <div class="testimonio-info">
-                            <h3>Carlos Mendoza</h3>
-                            <div class="testimonio-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonio-body">
-                        <p>"Pasamos nuestra luna de miel en la cabaña premium y fue mágico. El jacuzzi privado con vista al mar hizo que cada atardecer fuera especial. ¡Altamente recomendado!"</p>
-                        <span class="testimonio-date">Marzo 2023</span>
-                    </div>
-                </div>
-                
-                <!-- Testimonio 3 -->
-                <div class="testimonio-card">
-                    <div class="testimonio-header">
-                        <img src="assets/img/testimonio3.jpg" alt="Testimonio3" class="testimonio-img">
-                        <div class="testimonio-info">
-                            <h3>Laura Jiménez</h3>
-                            <div class="testimonio-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonio-body">
-                        <p>"Como viajera frecuente, valoro mucho la comodidad y limpieza. La habitación estándar fue perfecta, con una cama muy cómoda y excelente conexión WiFi para trabajar."</p>
-                        <span class="testimonio-date">Mayo 2023</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Sección Ofertas Especiales -->
     <section id="ofertas" class="section ofertas">
         <div class="container">
@@ -342,6 +208,130 @@
         </div>
     </section>
 
+    <!-- Sección Galería -->
+    <section id="galeria" class="section galeria">
+        <div class="container">
+            <h2 class="section-title">Nuestros Espacios</h2>
+            <p class="section-subtitle">Descubre la elegancia de nuestros alojamientos</p>
+            
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="assets/img/ejecutiva2.jpg" alt="Ejecutiva2">
+                    <div class="galeria-overlay">
+                        <h3>Suite Ejecutiva</h3>
+                        <p>Amplios espacios para viajeros exigentes</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="assets/img/sala.jpg" alt="Sala de estar">
+                    <div class="galeria-overlay">
+                        <h3>Áreas Comunes</h3>
+                        <p>Diseñadas para tu comodidad</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="assets/img/premium2.jpg" alt="Premium2">
+                    <div class="galeria-overlay">
+                        <h3>Cabaña Premium</h3>
+                        <p>Privacidad y lujo en un mismo espacio</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="assets/img/estandar2.jpg" alt="Habitación Estándar">
+                    <div class="galeria-overlay">
+                        <h3>Habitación Estándar</h3>
+                        <p>Confort a un precio accesible</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="assets/img/restaurante.jpg" alt="Restaurante">
+                    <div class="galeria-overlay">
+                        <h3>Restaurante</h3>
+                        <p>Cocina gourmet con ingredientes locales</p>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="assets/img/spa.jpg" alt="Spa">
+                    <div class="galeria-overlay">
+                        <h3>Área de Spa</h3>
+                        <p>Relájate y rejuvenece</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="testimonios" class="section testimonios">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros huéspedes</h2>
+            <p class="section-subtitle">Experiencias reales de quienes han disfrutado nuestros servicios</p>
+            
+            <div class="testimonios-slider">
+                <!-- Testimonio 1 -->
+                <div class="testimonio-card animate-from-left">
+                    <div class="testimonio-header">
+                        <img src="assets/img/testimonio1.jpg" alt="Testimonio1" class="testimonio-img">
+                        <div class="testimonio-info">
+                            <h3>María González</h3>
+                            <div class="testimonio-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonio-body">
+                        <p>"La suite ejecutiva superó todas mis expectativas. El servicio fue impecable y la atención al detalle increíble. Definitivamente volveré en mi próximo viaje de negocios."</p>
+                        <span class="testimonio-date">Enero 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="testimonio-card animate-from-left">
+                    <div class="testimonio-header">
+                        <img src="assets/img/testimonio2.jpg" alt="Testimonio2" class="testimonio-img">
+                        <div class="testimonio-info">
+                            <h3>Carlos Mendoza</h3>
+                            <div class="testimonio-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonio-body">
+                        <p>"Pasamos nuestra luna de miel en la cabaña premium y fue mágico. El jacuzzi privado con vista al mar hizo que cada atardecer fuera especial. ¡Altamente recomendado!"</p>
+                        <span class="testimonio-date">Marzo 2023</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="testimonio-card animate-from-left">
+                    <div class="testimonio-header">
+                        <img src="assets/img/testimonio3.jpg" alt="Testimonio3" class="testimonio-img">
+                        <div class="testimonio-info">
+                            <h3>Laura Jiménez</h3>
+                            <div class="testimonio-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonio-body">
+                        <p>"Como viajera frecuente, valoro mucho la comodidad y limpieza. La habitación estándar fue perfecta, con una cama muy cómoda y excelente conexión WiFi para trabajar."</p>
+                        <span class="testimonio-date">Mayo 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Sección Métodos de Pago -->
     <section id="pagos" class="section pagos">
         <div class="container">
@@ -349,7 +339,7 @@
             <p class="section-subtitle">Ofrecemos múltiples opciones para tu comodidad</p>
             
             <div class="payment-methods">
-                <div class="payment-card">
+                <div class="payment-card animate-from-bottom">
                     <div class="payment-icon">
                         <i class="fab fa-cc-visa"></i>
                     </div>
@@ -357,7 +347,7 @@
                     <p>Aceptamos todas las principales tarjetas con procesamiento seguro.</p>
                 </div>
                 
-                <div class="payment-card">
+                <div class="payment-card animate-from-bottom">
                     <div class="payment-icon">
                         <i class="fas fa-money-bill-wave"></i>
                     </div>
@@ -365,7 +355,7 @@
                     <p>Transferencias bancarias nacionales e internacionales.</p>
                 </div>
                 
-                <div class="payment-card">
+                <div class="payment-card animate-from-bottom">
                     <div class="payment-icon">
                         <i class="fab fa-paypal"></i>
                     </div>
@@ -383,7 +373,7 @@
             <p class="section-subtitle">Estamos aquí para ayudarte con cualquier consulta</p>
             
             <div class="contacto-grid">
-                <div class="contacto-info">
+                <div class="contacto-info animate-from-left">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
@@ -455,8 +445,7 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
+<!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">

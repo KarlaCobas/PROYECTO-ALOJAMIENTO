@@ -1,16 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const overlay = document.querySelector('.overlay');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    function toggleMenu() {
+    menuToggle.addEventListener('click', function() {
         menuToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
         overlay.classList.toggle('active');
         document.body.classList.toggle('no-scroll');
-    }
+    });
     
     function closeMenu() {
         menuToggle.classList.remove('active');
@@ -19,21 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.remove('no-scroll');
     }
     
-    menuToggle.addEventListener('click', toggleMenu);
-    overlay.addEventListener('click', closeMenu);
     navLinks.forEach(link => link.addEventListener('click', closeMenu));
     
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('.header');
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
             e.preventDefault();
             
             const targetId = this.getAttribute('href');
@@ -44,67 +32,59 @@ document.addEventListener('DOMContentLoaded', function() {
                     top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
+                
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
             }
         });
     });
     
-    const animateElements = function() {
-        const elements = document.querySelectorAll('.fade-in');
-        const windowHeight = window.innerHeight;
-        
-        elements.forEach(element => {
-            const elementPosition = element.getBoundingClientRect().top;
-            const elementVisible = 100;
+    const header = document.querySelector('.header');
+    
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+    
+    const animateElements = document.querySelectorAll('.animate-from-left, .animate-from-right, .animate-from-bottom');
+    
+    function checkScroll() {
+        animateElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
             
-            if (elementPosition < windowHeight - elementVisible) {
-                element.classList.add('animated');
+            if (elementTop < windowHeight - 100) {
+                element.classList.add('animate');
             }
         });
-    };
+    }
     
-    window.addEventListener('load', animateElements);
-    window.addEventListener('scroll', animateElements);
+    checkScroll();
     
-    const contactForm = document.querySelector('.contacto-form');
+    window.addEventListener('scroll', checkScroll);
+    
+    const contactForm = document.querySelector('.contact-form');
+    
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-            
-            setTimeout(() => {
-                submitBtn.innerHTML = '<i class="fas fa-check"></i> Enviado';
-                submitBtn.style.backgroundColor = 'var(--success-color)';
-                
-                setTimeout(() => {
-                    this.reset();
-                    
-                    const formGroups = this.querySelectorAll('.form-group');
-                    formGroups.forEach(group => {
-                        const input = group.querySelector('input, select, textarea');
-                        const label = group.querySelector('label');
-                        
-                        if (input.value === '' || (input.tagName === 'SELECT' && input.value === '')) {
-                            label.style.top = '1.2rem';
-                            label.style.left = '1.2rem';
-                            label.style.fontSize = '1rem';
-                        }
-                    });
-                    
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.style.backgroundColor = 'var(--primary-color)';
-                    
-                    alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
-                }, 2000);
-            }, 1500);
+            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+            this.reset();
         });
     }
     
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    galleryItems.forEach(item => {
+        item.addEventListener('touchstart', function() {
+            this.classList.toggle('hover');
+        });
+    });
+
     const galeriaItems = document.querySelectorAll('.galeria-item');
     if (galeriaItems.length > 0) {
         const lightbox = document.createElement('div');
@@ -131,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function() {
         lightbox.appendChild(lightboxImg);
         document.body.appendChild(lightbox);
         
-        // Abrir lightbox al hacer clic
         galeriaItems.forEach(item => {
             item.addEventListener('click', function() {
                 const imgSrc = this.querySelector('img').src;
@@ -142,7 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Cerrar lightbox
         lightbox.addEventListener('click', function(e) {
             if (e.target !== lightboxImg) {
                 lightbox.style.opacity = '0';
@@ -152,86 +130,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Efecto hover para cards de servicios
-    const serviceCards = document.querySelectorAll('.servicio-card');
-    serviceCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            if (window.innerWidth > 768) {
-                this.style.transform = 'translateY(-10px)';
-                this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.15)';
-            }
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            if (window.innerWidth > 768) {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'var(--box-shadow)';
-            }
-        });
-    });
-    
-    // Efecto hover para testimonios
-    const testimonioCards = document.querySelectorAll('.testimonio-card');
-    testimonioCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            if (window.innerWidth > 768) {
-                this.style.transform = 'translateY(-5px)';
-                this.style.boxShadow = '0 15px 35px rgba(0, 0, 0, 0.1)';
-                this.style.borderColor = 'rgba(74, 111, 165, 0.3)';
-            }
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            if (window.innerWidth > 768) {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'var(--box-shadow)';
-                this.style.borderColor = 'rgba(74, 111, 165, 0.1)';
-            }
-        });
-    });
-    
-    // Efecto hover para ofertas
-    const ofertaCards = document.querySelectorAll('.oferta-card');
-    ofertaCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            if (window.innerWidth > 768) {
-                this.style.transform = 'translateY(-10px)';
-                this.style.boxShadow = '0 15px 40px rgba(0, 0, 0, 0.2)';
-            }
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            if (window.innerWidth > 768) {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'var(--box-shadow)';
-            }
-        });
-    });
-    
-    // Efecto hover para métodos de pago
-    const paymentCards = document.querySelectorAll('.payment-card');
-    paymentCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            if (window.innerWidth > 768) {
-                this.style.transform = 'translateY(-5px)';
-                this.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
-                this.style.borderColor = 'var(--accent-color)';
-            }
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            if (window.innerWidth > 768) {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = 'var(--box-shadow)';
-                this.style.borderColor = '#e9ecef';
-            }
-        });
-    });
-    
-    // Cerrar menú al redimensionar a desktop
-    window.addEventListener('resize', function() {
-        if (window.innerWidth >= 992) {
-            closeMenu();
-        }
-    });
 });
