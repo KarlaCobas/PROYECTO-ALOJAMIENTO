@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,451 +8,485 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo">Hori<span>zone</span></a>
-            <button class="menu-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#" class="logo">Horizone</a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ofertas">Ofertas Especiales</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#pagos">Pagos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
             </button>
-            <nav class="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                    <li><a href="#ofertas" class="nav-link">Ofertas Especiales</a></li>
-                    <li><a href="#galeria" class="nav-link">Galería</a></li>
-                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
-                    <li><a href="#pagos" class="nav-link">Pagos</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>                </ul>
-            </nav>
+        </nav>
+
+        <!-- Menú Mobile -->
+        <div class="mobile-menu">
+            <span class="close-btn"><i class="fas fa-times"></i></span>
+            <ul class="mobile-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#ofertas">Ofertas Especiales</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#pagos">Pagos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="overlay"></div>
+
+        <!-- Formas geométricas -->
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="shape-3"></div>
+
+        <div class="header-content">
+            <h1>Experiencias de alojamiento inolvidables</h1>
+            <p class="header-subtitle">Descubre espacios únicos diseñados para tu comodidad y tranquilidad.</p>
+            <button class="btn-header">Explorar opciones</button>
+            <button class="btn-header2">Contactar</button>
         </div>
     </header>
 
     <main>
-        <section id="inicio" class="main">
-            <div class="container">
-                <h1 class="main-title">Experiencias de alojamiento inolvidables</h1>
-                <p class="main-subtitle">Descubre espacios únicos diseñados para tu comodidad y tranquilidad.</p>
-                <div class="main-buttons">
-                    <a href="#contacto" class="btn btn-primary animate-from-bottom">Explorar opciones</a>
-                    <a href="#galeria" class="btn btn-secondary animate-from-bottom">Contactar</a>
-                </div>
-            </div>
-        </section>
+        <div id="inicio" class="main"></div>
 
-        <section id="nosotros" class="about">
-            <div class="container">
-                <h2 class="section-title">Sobre Nosotros</h2>
-                <p class="section-subtitle">Más de una década ofreciendo experiencias excepcionales</p>
-            
-                <div class="about-content">
-                    <div class="about-text animate-from-left">
-                        <h3>Nuestra filosofía</h3>
-                        <p>En Horizone, creemos que cada huésped merece una experiencia personalizada. Desde 2010, nos hemos dedicado a crear espacios que combinan comodidad, elegancia y calidez.</p>
-                        <p>Nuestro equipo está compuesto por expertos en hospitalidad que anticipan tus necesidades para ofrecerte un servicio impecable.</p>
-                        <ul class="about-features">
-                        <li><i class="fas fa-check-circle"></i> Atención personalizada 24/7</li>
-                        <li><i class="fas fa-check-circle"></i> Diseño interior exclusivo</li>
-                        <li><i class="fas fa-check-circle"></i> Ubicaciones privilegiadas</li>
-                        </ul>
-                    </div>
-                    <div class="about-image animate-from-left">
-                        <img src="assets/img/about.jpg" alt="About" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-        
         <!-- Sección Servicios -->
-    <section id="servicios" class="section servicios">
-        <div class="container">
-            <h2 class="section-title">Nuestros Servicios</h2>
-            <p class="section-subtitle">Selecciona el alojamiento que mejor se adapte a tus necesidades</p>
-            
-            <div class="servicios-grid">
-                <!-- Card 1 -->
-                <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Habitación Estándar</h3>
-                    <div class="servicio-image">
-                        <img src="assets/img/estandar.jpg" alt="estandar">
-                    </div>
-                    <div class="servicio-content">
-                        <ul class="servicio-features">
-                            <li><i class="fas fa-check"></i> Cama confortable</li>
-                            <li><i class="fas fa-check"></i> Baño privado</li>
-                            <li><i class="fas fa-check"></i> WiFi rápido</li>
-                            <li><i class="fas fa-check"></i> Desayuno incluido</li>
-                        </ul>
-                        <div class="servicio-price">
-                            <span class="price">$85</span>
-                            <span class="period">/noche</span>
-                        </div>
-                    </div>
-                    <div class="servicio-footer">
-                        <button class="btn btn-servicio">Reservar ahora</button>
-                    </div>
-                </div>
-                
-                <!-- Card 2 -->
-                <div class="servicio-card featured">
-                    <div class="servicio-badge">Recomendado</div>
-                    <div class="servicio-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Suite Ejecutiva</h3>
-                    <div class="servicio-image">
-                        <img src="assets/img/ejecutiva.jpg" alt="Ejecutiva">
-                    </div>
-                    <div class="servicio-content">
-                        <ul class="servicio-features">
-                            <li><i class="fas fa-check"></i> Amplio espacio</li>
-                            <li><i class="fas fa-check"></i> Sala de estar</li>
-                            <li><i class="fas fa-check"></i> Mini cocina</li>
-                            <li><i class="fas fa-check"></i> Servicio a la habitación</li>
-                        </ul>
-                        <div class="servicio-price">
-                            <span class="price">$150</span>
-                            <span class="period">/noche</span>
-                        </div>
-                    </div>
-                    <div class="servicio-footer">
-                        <button class="btn btn-servicio">Reservar ahora</button>
-                    </div>
-                </div>
-                
-                <!-- Card 3 -->
-                <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <i class="fas fa-umbrella-beach"></i>
-                    </div>
-                    <h3>Cabaña Premium</h3>
-                    <div class="servicio-image">
-                        <img src="assets/img/premium.jpg" alt="Premium">
-                    </div>
-                    <div class="servicio-content">
-                        <ul class="servicio-features">
-                            <li><i class="fas fa-check"></i> Ubicación privada</li>
-                            <li><i class="fas fa-check"></i> Vista al mar</li>
-                            <li><i class="fas fa-check"></i> Jacuzzi privado</li>
-                            <li><i class="fas fa-check"></i> Cocina completa</li>
-                        </ul>
-                        <div class="servicio-price">
-                            <span class="price">$220</span>
-                            <span class="period">/noche</span>
-                        </div>
-                    </div>
-                    <div class="servicio-footer">
-                        <button class="btn btn-servicio">Reservar ahora</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="servicios" class="section servicios">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Selecciona el alojamiento que mejor se adapte a tus necesidades</p>
 
-    <!-- Sección Ofertas Especiales -->
-    <section id="ofertas" class="section ofertas">
-        <div class="container">
-            <h2 class="section-title">Ofertas Especiales</h2>
-            <p class="section-subtitle">Descuentos exclusivos y paquetes para tu próxima estadía</p>
-            
-            <div class="ofertas-grid">
-                <!-- Oferta 1 -->
-                <div class="oferta-card">
-                    <div class="oferta-tag">-30%</div>
-                    <div class="oferta-img"></div>
-                    <div class="oferta-content">
-                        <h3>Escapada Romántica</h3>
-                        <p>2 noches en suite ejecutiva + cena gourmet + late checkout</p>
-                        <div class="oferta-precio">
-                            <span class="precio-antiguo">$450</span>
-                            <span class="precio-actual">$315</span>
+                <div class="servicios-grid">
+                    <!-- Card 1 -->
+                    <div class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-home"></i>
                         </div>
-                        <a href="#contacto" class="btn btn-oferta">Reservar ahora</a>
-                    </div>
-                </div>
-                
-                <!-- Oferta 2 -->
-                <div class="oferta-card">
-                    <div class="oferta-tag">-25%</div>
-                    <div class="oferta-img"></div>
-                    <div class="oferta-content">
-                        <h3>Paquetes Familiares</h3>
-                        <p>3 noches en cabaña premium + desayunos + actividades infantiles</p>
-                        <div class="oferta-precio">
-                            <span class="precio-antiguo">$660</span>
-                            <span class="precio-actual">$495</span>
-                        </div>
-                        <a href="#contacto" class="btn btn-oferta">Reservar ahora</a>
-                    </div>
-                </div>
-                
-                <!-- Oferta 3 -->
-                <div class="oferta-card">
-                    <div class="oferta-tag">-20%</div>
-                    <div class="oferta-img"></div>
-                    <div class="oferta-content">
-                        <h3>Larga Estadía</h3>
-                        <p>7 noches en habitación estándar + lavandería gratuita</p>
-                        <div class="oferta-precio">
-                            <span class="precio-antiguo">$595</span>
-                            <span class="precio-actual">$476</span>
-                        </div>
-                        <a href="#contacto" class="btn btn-oferta">Reservar ahora</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Galería -->
-    <section id="galeria" class="section galeria">
-        <div class="container">
-            <h2 class="section-title">Nuestros Espacios</h2>
-            <p class="section-subtitle">Descubre la elegancia de nuestros alojamientos</p>
-            
-            <div class="galeria-grid">
-                <div class="galeria-item">
-                    <img src="assets/img/ejecutiva2.jpg" alt="Ejecutiva2">
-                    <div class="galeria-overlay">
-                        <h3>Suite Ejecutiva</h3>
-                        <p>Amplios espacios para viajeros exigentes</p>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/img/sala.jpg" alt="Sala de estar">
-                    <div class="galeria-overlay">
-                        <h3>Áreas Comunes</h3>
-                        <p>Diseñadas para tu comodidad</p>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/img/premium2.jpg" alt="Premium2">
-                    <div class="galeria-overlay">
-                        <h3>Cabaña Premium</h3>
-                        <p>Privacidad y lujo en un mismo espacio</p>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/img/estandar2.jpg" alt="Habitación Estándar">
-                    <div class="galeria-overlay">
                         <h3>Habitación Estándar</h3>
-                        <p>Confort a un precio accesible</p>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/img/restaurante.jpg" alt="Restaurante">
-                    <div class="galeria-overlay">
-                        <h3>Restaurante</h3>
-                        <p>Cocina gourmet con ingredientes locales</p>
-                    </div>
-                </div>
-                <div class="galeria-item">
-                    <img src="assets/img/spa.jpg" alt="Spa">
-                    <div class="galeria-overlay">
-                        <h3>Área de Spa</h3>
-                        <p>Relájate y rejuvenece</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<section id="testimonios" class="section testimonios">
-        <div class="container">
-            <h2 class="section-title">Lo que dicen nuestros huéspedes</h2>
-            <p class="section-subtitle">Experiencias reales de quienes han disfrutado nuestros servicios</p>
-            
-            <div class="testimonios-slider">
-                <!-- Testimonio 1 -->
-                <div class="testimonio-card animate-from-left">
-                    <div class="testimonio-header">
-                        <img src="assets/img/testimonio1.jpg" alt="Testimonio1" class="testimonio-img">
-                        <div class="testimonio-info">
-                            <h3>María González</h3>
-                            <div class="testimonio-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                        <div class="servicio-image">
+                            <img src="assets/img/estandar.jpg" alt="estandar">
+                        </div>
+                        <div class="servicio-content">
+                            <ul class="servicio-features">
+                                <li><i class="fas fa-check"></i> Cama confortable</li>
+                                <li><i class="fas fa-check"></i> Baño privado</li>
+                                <li><i class="fas fa-check"></i> WiFi rápido</li>
+                                <li><i class="fas fa-check"></i> Desayuno incluido</li>
+                            </ul>
+                            <div class="servicio-price">
+                                <span class="price">$85</span>
+                                <span class="period">/noche</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonio-body">
-                        <p>"La suite ejecutiva superó todas mis expectativas. El servicio fue impecable y la atención al detalle increíble. Definitivamente volveré en mi próximo viaje de negocios."</p>
-                        <span class="testimonio-date">Enero 2023</span>
-                    </div>
-                </div>
-                
-                <!-- Testimonio 2 -->
-                <div class="testimonio-card animate-from-left">
-                    <div class="testimonio-header">
-                        <img src="assets/img/testimonio2.jpg" alt="Testimonio2" class="testimonio-img">
-                        <div class="testimonio-info">
-                            <h3>Carlos Mendoza</h3>
-                            <div class="testimonio-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
+                        <div class="servicio-footer">
+                            <button class="btn btn-servicio">Reservar ahora</button>
                         </div>
                     </div>
-                    <div class="testimonio-body">
-                        <p>"Pasamos nuestra luna de miel en la cabaña premium y fue mágico. El jacuzzi privado con vista al mar hizo que cada atardecer fuera especial. ¡Altamente recomendado!"</p>
-                        <span class="testimonio-date">Marzo 2023</span>
-                    </div>
-                </div>
-                
-                <!-- Testimonio 3 -->
-                <div class="testimonio-card animate-from-left">
-                    <div class="testimonio-header">
-                        <img src="assets/img/testimonio3.jpg" alt="Testimonio3" class="testimonio-img">
-                        <div class="testimonio-info">
-                            <h3>Laura Jiménez</h3>
-                            <div class="testimonio-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonio-body">
-                        <p>"Como viajera frecuente, valoro mucho la comodidad y limpieza. La habitación estándar fue perfecta, con una cama muy cómoda y excelente conexión WiFi para trabajar."</p>
-                        <span class="testimonio-date">Mayo 2023</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Sección Métodos de Pago -->
-    <section id="pagos" class="section pagos">
-        <div class="container">
-            <h2 class="section-title">Métodos de Pago</h2>
-            <p class="section-subtitle">Ofrecemos múltiples opciones para tu comodidad</p>
-            
-            <div class="payment-methods">
-                <div class="payment-card animate-from-bottom">
-                    <div class="payment-icon">
-                        <i class="fab fa-cc-visa"></i>
+                    <!-- Card 2 -->
+                    <div class="servicio-card featured">
+                        <div class="servicio-badge">Recomendado</div>
+                        <div class="servicio-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Suite Ejecutiva</h3>
+                        <div class="servicio-image">
+                            <img src="assets/img/ejecutiva.jpg" alt="Ejecutiva">
+                        </div>
+                        <div class="servicio-content">
+                            <ul class="servicio-features">
+                                <li><i class="fas fa-check"></i> Amplio espacio</li>
+                                <li><i class="fas fa-check"></i> Sala de estar</li>
+                                <li><i class="fas fa-check"></i> Mini cocina</li>
+                                <li><i class="fas fa-check"></i> Servicio a la habitación</li>
+                            </ul>
+                            <div class="servicio-price">
+                                <span class="price">$150</span>
+                                <span class="period">/noche</span>
+                            </div>
+                        </div>
+                        <div class="servicio-footer">
+                            <button class="btn btn-servicio">Reservar ahora</button>
+                        </div>
                     </div>
-                    <h3>Tarjetas de Crédito</h3>
-                    <p>Aceptamos todas las principales tarjetas con procesamiento seguro.</p>
-                </div>
-                
-                <div class="payment-card animate-from-bottom">
-                    <div class="payment-icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <h3>Transferencias</h3>
-                    <p>Transferencias bancarias nacionales e internacionales.</p>
-                </div>
-                
-                <div class="payment-card animate-from-bottom">
-                    <div class="payment-icon">
-                        <i class="fab fa-paypal"></i>
-                    </div>
-                    <h3>PayPal</h3>
-                    <p>Pagos rápidos y seguros a través de PayPal.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="section contacto">
-        <div class="container">
-            <h2 class="section-title">Contáctanos</h2>
-            <p class="section-subtitle">Estamos aquí para ayudarte con cualquier consulta</p>
-            
-            <div class="contacto-grid">
-                <div class="contacto-info animate-from-left">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Dirección</h3>
-                            <p>Calle Principal 123, Ciudad Elegante</p>
+                    <!-- Card 3 -->
+                    <div class="servicio-card">
+                        <div class="servicio-icon">
+                            <i class="fas fa-umbrella-beach"></i>
                         </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h3>Teléfono</h3>
-                            <p>+1 234 567 890</p>
+                        <h3>Cabaña Premium</h3>
+                        <div class="servicio-image">
+                            <img src="assets/img/premium.jpg" alt="Premium">
                         </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>info@horizone.com</p>
+                        <div class="servicio-content">
+                            <ul class="servicio-features">
+                                <li><i class="fas fa-check"></i> Ubicación privada</li>
+                                <li><i class="fas fa-check"></i> Vista al mar</li>
+                                <li><i class="fas fa-check"></i> Jacuzzi privado</li>
+                                <li><i class="fas fa-check"></i> Cocina completa</li>
+                            </ul>
+                            <div class="servicio-price">
+                                <span class="price">$220</span>
+                                <span class="period">/noche</span>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Horario</h3>
-                            <p>Lunes a Viernes: 9am - 6pm</p>
-                            <p>Sábados: 10am - 2pm</p>
+                        <div class="servicio-footer">
+                            <button class="btn btn-servicio">Reservar ahora</button>
                         </div>
                     </div>
                 </div>
-                
-                <form class="contacto-form">
-                    <div class="form-group">
-                        <input type="text" id="nombre" placeholder=" " required>
-                        <label for="nombre">Nombre completo</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder=" " required>
-                        <label for="email">Correo electrónico</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="tel" id="telefono" placeholder=" ">
-                        <label for="telefono">Teléfono (opcional)</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <select id="asunto" required>
-                            <option value="" disabled selected></option>
-                            <option value="reserva">Consulta sobre reserva</option>
-                            <option value="servicios">Información sobre servicios</option>
-                            <option value="pagos">Consulta sobre pagos</option>
-                            <option value="otro">Otro asunto</option>
-                        </select>
-                        <label for="asunto">Asunto</label>
-                    </div>
-                    
-                    <div class="form-group">
-                        <textarea id="mensaje" rows="4" placeholder=" " required></textarea>
-                        <label for="mensaje">Tu mensaje</label>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-form">Enviar mensaje</button>
-                </form>
             </div>
-        </div>
-    </section>
-<!-- Footer -->
+        </section>
+
+        <!-- Sección Ofertas Especiales -->
+        <section id="ofertas" class="special-offers-section">
+            <h2 class="section-title">Ofertas Especiales Exclusivas</h2>
+            <p class="offer-subtitle">Descuentos exclusivos y paquetes para tu próxima estadía</p>
+            <div class="special-offers-container">
+                <article class="special-card">
+                    <div class="special-card-header">
+                        <span class="special-badge">LIMITADO</span>
+                        <h3>Escapada Romántica</h3>
+                    </div>
+                    <div class="special-card-body">
+                        <p>Una experiencia inolvidable para parejas con cena a la luz de velas, botella de champagne y
+                            decoración especial.</p>
+                        <ul class="special-features">
+                            <li><i class="fas fa-heart"></i> Cena romántica incluida</li>
+                            <li><i class="fas fa-wine-glass"></i> Botella de champagne</li>
+                            <li><i class="fas fa-bed"></i> Decoración especial</li>
+                            <li><i class="fas fa-clock"></i> Late check-out</li>
+                        </ul>
+                    </div>
+                    <div class="special-footer">
+                        <div class="special-price">$259/noche</div>
+                        <button class="special-btn">Reservar</button>
+                    </div>
+                </article>
+
+                <article class="special-card">
+                    <div class="special-card-header">
+                        <span class="special-badge">EXCLUSIVO</span>
+                        <h3>Retiro de Bienestar</h3>
+                    </div>
+                    <div class="special-card-body">
+                        <p>Reconecta contigo mismo en nuestro retiro de bienestar con yoga, meditación y tratamientos
+                            holísticos.</p>
+                        <ul class="special-features">
+                            <li><i class="fas fa-leaf"></i> Clases de yoga diarias</li>
+                            <li><i class="fas fa-spa"></i> Tratamientos spa</li>
+                            <li><i class="fas fa-apple-alt"></i> Dieta detox incluida</li>
+                            <li><i class="fas fa-brain"></i> Sesiones de meditación</li>
+                        </ul>
+                    </div>
+                    <div class="special-footer">
+                        <div class="special-price">$349/noche</div>
+                        <button class="special-btn">Reservar</button>
+                    </div>
+                </article>
+
+                <article class="special-card">
+                    <div class="special-card-header">
+                        <span class="special-badge">PREMIUM</span>
+                        <h3>Experiencia Gastronómica</h3>
+                    </div>
+                    <div class="special-card-body">
+                        <p>Disfruta de lo mejor de la alta cocina con menús degustación de nuestro chef estrella y
+                            maridaje de vinos.</p>
+                        <ul class="special-features">
+                            <li><i class="fas fa-utensils"></i> Menú degustación 7 platos</li>
+                            <li><i class="fas fa-wine-bottle"></i> Vinos premium</li>
+                            <li><i class="fas fa-user-chef"></i> Cocina con el chef</li>
+                            <li><i class="fas fa-star"></i> Experiencia exclusiva</li>
+                        </ul>
+                    </div>
+                    <div class="special-footer">
+                        <div class="special-price">$429/noche</div>
+                        <button class="special-btn">Reservar</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Galería -->
+        <section id="galeria" class="section galeria">
+            <div class="gallery-container">
+                <div class="gallery-title">
+                    <h2>Nuestros Espacios</h2>
+                    <p class="galeria-subtitle">Descubre la elegancia de nuestros alojamientos</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/img/ejecutiva2.jpg" alt="Ejecutiva2">
+                        <div class="item-info">
+                            <h3>Suite Ejecutiva</h3>
+                            <p>Amplios espacios para viajeros exigentes</p>
+                            <a href="#" class="btn">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/sala.jpg" alt="Sala de estar">
+                        <div class="item-info">
+                            <h3>Áreas Comunes</h3>
+                            <p>Diseñadas para tu comodidad</p>
+                            <a href="#" class="btn">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/premium2.jpg" alt="Premium2">
+                        <div class="item-info">
+                            <h3>Cabaña Premium</h3>
+                            <p>Privacidad y lujo en un mismo espacio</p>
+                            <a href="#" class="btn">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/estandar2.jpg" alt="Habitación Estándar">
+                        <div class="item-info">
+                            <h3>Habitación Estándar</h3>
+                            <p>Confort a un precio accesible</p>
+                            <a href="#" class="btn">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/restaurante.jpg" alt="Restaurante">
+                        <div class="item-info">
+                            <h3>Restaurante</h3>
+                            <p>Cocina gourmet con ingredientes locales</p>
+                            <a href="#" class="btn">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="assets/img/spa.jpg" alt="Spa">
+                        <div class="item-info">
+                            <h3>Área de Spa</h3>
+                            <p>Relájate y rejuvenece</p>
+                            <a href="#" class="btn">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seccion Testimonios -->
+        <section id="testimonios" class="section testimonios">
+            <div class="container">
+                <h2 class="section-title">Lo que dicen nuestros huéspedes</h2>
+                <p class="section-subtitle">Experiencias reales de quienes han disfrutado nuestros servicios</p>
+
+                <div class="testimonios-slider">
+                    <!-- Testimonio 1 -->
+                    <div class="testimonio-card animate-from-left">
+                        <div class="testimonio-header">
+                            <img src="assets/img/testimonio1.jpg" alt="Testimonio1" class="testimonio-img">
+                            <div class="testimonio-info">
+                                <h3>María González</h3>
+                                <div class="testimonio-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonio-body">
+                            <p>"La suite ejecutiva superó todas mis expectativas. El servicio fue impecable y la
+                                atención al detalle increíble. Definitivamente volveré en mi próximo viaje de negocios."
+                            </p>
+                            <span class="testimonio-date">Enero 2023</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="testimonio-card animate-from-left">
+                        <div class="testimonio-header">
+                            <img src="assets/img/testimonio2.jpg" alt="Testimonio2" class="testimonio-img">
+                            <div class="testimonio-info">
+                                <h3>Carlos Mendoza</h3>
+                                <div class="testimonio-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonio-body">
+                            <p>"Pasamos nuestra luna de miel en la cabaña premium y fue mágico. El jacuzzi privado con
+                                vista al mar hizo que cada atardecer fuera especial. ¡Altamente recomendado!"</p>
+                            <span class="testimonio-date">Marzo 2023</span>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 3 -->
+                    <div class="testimonio-card animate-from-left">
+                        <div class="testimonio-header">
+                            <img src="assets/img/testimonio3.jpg" alt="Testimonio3" class="testimonio-img">
+                            <div class="testimonio-info">
+                                <h3>Laura Jiménez</h3>
+                                <div class="testimonio-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonio-body">
+                            <p>"Como viajera frecuente, valoro mucho la comodidad y limpieza. La habitación estándar fue
+                                perfecta, con una cama muy cómoda y excelente conexión WiFi para trabajar."</p>
+                            <span class="testimonio-date">Mayo 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Métodos de Pago -->
+        <section id="pagos" class="section pagos">
+            <div class="container">
+                <h2 class="section-title">Métodos de Pago</h2>
+                <p class="section-subtitle">Ofrecemos múltiples opciones para tu comodidad</p>
+
+                <div class="payment-methods">
+                    <!-- PayPal -->
+                    <div class="payment-card">
+                        <i class="fab fa-paypal payment-icon"></i>
+                        <h3 class="payment-name">PayPal</h3>
+                        <p class="payment-description">Pagos rápidos y seguros a través de PayPal.</p>
+                    </div>
+
+                    <!-- Transferencia Bancaria -->
+                    <div class="payment-card">
+                        <i class="fas fa-university payment-icon"></i>
+                        <h3 class="payment-name">Tarjetas de Crédito</h3>
+                        <p class="payment-description">Aceptamos todas las principales tarjetas con procesamiento
+                            seguro.</p>
+                    </div>
+
+                    <!-- Visa -->
+                    <div class="payment-card">
+                        <i class="fab fa-cc-visa payment-icon"></i>
+                        <h3 class="payment-name">Visa</h3>
+                        <p class="payment-description">Aceptamos todas las principales tarjetas con procesamiento
+                            seguro.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+
+        <div class="contact-container">
+            <section class="contact-section">
+                <div class="contact-content">
+
+                    <h1 class="contact-title">Contáctanos</h1>
+                    <p class="contact-intro">Estamos aquí para ayudarte. Ponte en contacto con nuestro equipo a través
+                        de cualquiera de estos medios.</p>
+
+                    <div class="contact-info">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-text">
+                                <h3>Correo electrónico</h3>
+                                <a href="mailto:info@horizone.com">info@horizone.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="method-text">
+                                <h3>Teléfono</h3>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-text">
+                                <h3>Dirección</h3>
+                                <p>Calle Principal 123, Ciudad Elegante</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="method-text">
+                                <h3>Horario</h3>
+                                <p>Lun-Vie: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nosotros" class="about">
+                <div class="container">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p class="section-subtitle">Más de una década ofreciendo experiencias excepcionales</p>
+
+                    <div class="about-content">
+                        <div class="about-text animate-from-left">
+                            <h3 class="about-subtitle">Nuestra filosofía</h3>
+                            <p>En Horizone, creemos que cada huésped merece una experiencia personalizada. Desde 2010,
+                                nos hemos dedicado a crear espacios que combinan comodidad, elegancia y calidez.</p>
+                            <p>Nuestro equipo está compuesto por expertos en hospitalidad que anticipan tus necesidades
+                                para ofrecerte un servicio impecable.</p>
+                            <ul class="about-features">
+                                <li><i class="fas fa-check-circle"></i> Atención personalizada 24/7</li>
+                                <li><i class="fas fa-check-circle"></i> Diseño interior exclusivo</li>
+                                <li><i class="fas fa-check-circle"></i> Ubicaciones privilegiadas</li>
+                            </ul>
+                        </div>
+                        <div class="about-image animate-from-left">
+                            <img src="assets/img/about.jpg" alt="About" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h3>Horizonee</h3>
+                    <h3>Horizone</h3>
                     <p>Proporcionando experiencias de alojamiento excepcionales desde 2010.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -460,21 +495,21 @@
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Enlaces rápidos</h3>
                     <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#ofertas">Ofertas Especiales</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#pagos">Pagos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#ofertas">Ofertas Especiales</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#pagos">Pagos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
                 </div>
-                
+
                 <div class="footer-col">
                     <h3>Servicios</h3>
                     <ul>
@@ -485,9 +520,9 @@
                         <li><a href="#">Eventos especiales</a></li>
                     </ul>
                 </div>
-                
+
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2025 Todos los derechos reservados.</p>
             </div>
