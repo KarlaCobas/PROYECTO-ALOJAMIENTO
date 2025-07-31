@@ -193,15 +193,4 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     }
 
-    window.addEventListener('load', updateScrollbarWidth);
-    window.addEventListener('resize', updateScrollbarWidth);
-
-    document.querySelector('.hamburger').addEventListener('click', function () {
-        document.body.classList.add('no-scroll');
-        updateScrollbarWidth();
-    });
-
-    document.querySelector('.close-btn').addEventListener('click', function () {
-        document.body.classList.remove('no-scroll');
-    });
 });
