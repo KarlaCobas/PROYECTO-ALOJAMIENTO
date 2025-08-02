@@ -193,4 +193,28 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     }
 
+    document.querySelectorAll('.payment-card').forEach(card => {
+        card.addEventListener('click', function () {
+            document.querySelectorAll('.payment-card').forEach(c => {
+                c.style.transform = '';
+                c.style.boxShadow = '';
+            });
+
+            this.style.transform = 'translateY(-8px) scale(1.05)';
+            this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.3)';
+
+            console.log('Método de pago seleccionado:', this.querySelector('.payment-name').textContent);
+        });
+    });
+
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const cards = document.querySelectorAll('.payment-card');
+
+        cards.forEach((card, index) => {
+            const speed = 0.3 + (index * 0.1);
+            card.style.transform = `translateY(${scrolled * speed * 0.05}px)`;
+        });
+    });
+
 });

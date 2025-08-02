@@ -22,8 +22,8 @@
                 <li><a href="#galeria">Galería</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
                 <li><a href="#pagos">Pagos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
             </ul>
 
             <button class="hamburger">
@@ -41,8 +41,8 @@
                 <li><a href="#galeria">Galería</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
                 <li><a href="#pagos">Pagos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
             </ul>
         </div>
 
@@ -65,90 +65,95 @@
         <div id="inicio" class="main"></div>
 
         <!-- Sección Servicios -->
-        <section id="servicios" class="section servicios">
-            <div class="container">
+        <section id="servicios" class="servicios-section">
+            <div class="servicios-container">
                 <h2 class="section-title">Nuestros Servicios</h2>
-                <p class="section-subtitle">Selecciona el alojamiento que mejor se adapte a tus necesidades</p>
+                <p class="servicio-section-subtitle">Selecciona el alojamiento que mejor se adapte a tus necesidades</p>
 
                 <div class="servicios-grid">
+
                     <!-- Card 1 -->
-                    <div class="servicio-card">
-                        <div class="servicio-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <h3>Habitación Estándar</h3>
+                    <article class="servicio-card">
                         <div class="servicio-image">
                             <img src="assets/img/estandar.jpg" alt="estandar">
                         </div>
                         <div class="servicio-content">
-                            <ul class="servicio-features">
-                                <li><i class="fas fa-check"></i> Cama confortable</li>
-                                <li><i class="fas fa-check"></i> Baño privado</li>
-                                <li><i class="fas fa-check"></i> WiFi rápido</li>
-                                <li><i class="fas fa-check"></i> Desayuno incluido</li>
-                            </ul>
-                            <div class="servicio-price">
-                                <span class="price">$85</span>
-                                <span class="period">/noche</span>
+                            <div class="servicio-header">
+                                <h3 class="servicio-title">Habitación Estándar</h3>
+                            </div>
+                            <div class="servicio-body">
+                                <ul class="servicio-features">
+                                    <li><i class="fas fa-check"></i> Cama confortable</li>
+                                    <li><i class="fas fa-check"></i> Baño privado</li>
+                                    <li><i class="fas fa-check"></i> WiFi rápido</li>
+                                    <li><i class="fas fa-check"></i> Desayuno incluido</li>
+                                </ul>
+                            </div>
+                            <div class="servicio-footer">
+                                <div class="servicio-price">
+                                    <span class="price-current">$85</span>
+                                    <span class="period">/noche</span>
+                                </div>
+                                <button class="servicio-btn">Reservar</button>
                             </div>
                         </div>
-                        <div class="servicio-footer">
-                            <button class="btn btn-servicio">Reservar ahora</button>
-                        </div>
-                    </div>
+                    </article>
 
                     <!-- Card 2 -->
-                    <div class="servicio-card featured">
-                        <div class="servicio-badge">Recomendado</div>
-                        <div class="servicio-icon">
-                            <i class="fas fa-building"></i>
+
+                    <article class="servicio-card premium-card">
+                        <div class="servicio-image">
+                            <img src="assets/img/premium.jpg" alt="Premium">
+                            <span class="servicio-badge">PREMIUM</span>
                         </div>
-                        <h3>Suite Ejecutiva</h3>
+                        <div class="servicio-content">
+                            <div class="servicio-header">
+                                <h3 class="servicio-title">Habitación Estándar</h3>
+                            </div>
+                            <div class="servicio-body">
+                                <ul class="servicio-features">
+                                    <li><i class="fas fa-check"></i> Ubicación privada</li>
+                                    <li><i class="fas fa-check"></i> Vista al mar</li>
+                                    <li><i class="fas fa-check"></i> Jacuzzi privado</li>
+                                    <li><i class="fas fa-check"></i> Cocina completa</li>
+                                </ul>
+                            </div>
+                            <div class="servicio-footer">
+                                <div class="servicio-price">
+                                    <span class="price-current">$220</span>
+                                    <span class="period">/noche</span>
+                                </div>
+                                <button class="servicio-btn">Reservar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="servicio-card">
                         <div class="servicio-image">
                             <img src="assets/img/ejecutiva.jpg" alt="Ejecutiva">
                         </div>
                         <div class="servicio-content">
-                            <ul class="servicio-features">
-                                <li><i class="fas fa-check"></i> Amplio espacio</li>
-                                <li><i class="fas fa-check"></i> Sala de estar</li>
-                                <li><i class="fas fa-check"></i> Mini cocina</li>
-                                <li><i class="fas fa-check"></i> Servicio a la habitación</li>
-                            </ul>
-                            <div class="servicio-price">
-                                <span class="price">$150</span>
-                                <span class="period">/noche</span>
+                            <div class="servicio-header">
+                                <h3 class="servicio-title">Suite Ejecutiva</h3>
+                            </div>
+                            <div class="servicio-body">
+                                <ul class="servicio-features">
+                                    <li><i class="fas fa-check"></i> Amplio espacio</li>
+                                    <li><i class="fas fa-check"></i> Sala de estar</li>
+                                    <li><i class="fas fa-check"></i> Mini cocina</li>
+                                    <li><i class="fas fa-check"></i> Servicio a la habitación</li>
+                                </ul>
+                            </div>
+                            <div class="servicio-footer">
+                                <div class="servicio-price">
+                                    <span class="price-current">$150</span>
+                                    <span class="period">/noche</span>
+                                </div>
+                                <button class="servicio-btn">Reservar</button>
                             </div>
                         </div>
-                        <div class="servicio-footer">
-                            <button class="btn btn-servicio">Reservar ahora</button>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="servicio-card">
-                        <div class="servicio-icon">
-                            <i class="fas fa-umbrella-beach"></i>
-                        </div>
-                        <h3>Cabaña Premium</h3>
-                        <div class="servicio-image">
-                            <img src="assets/img/premium.jpg" alt="Premium">
-                        </div>
-                        <div class="servicio-content">
-                            <ul class="servicio-features">
-                                <li><i class="fas fa-check"></i> Ubicación privada</li>
-                                <li><i class="fas fa-check"></i> Vista al mar</li>
-                                <li><i class="fas fa-check"></i> Jacuzzi privado</li>
-                                <li><i class="fas fa-check"></i> Cocina completa</li>
-                            </ul>
-                            <div class="servicio-price">
-                                <span class="price">$220</span>
-                                <span class="period">/noche</span>
-                            </div>
-                        </div>
-                        <div class="servicio-footer">
-                            <button class="btn btn-servicio">Reservar ahora</button>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -369,116 +374,124 @@
 
         <!-- Sección Métodos de Pago -->
         <section id="pagos" class="section pagos">
-            <div class="container">
-                <h2 class="section-title">Métodos de Pago</h2>
-                <p class="section-subtitle">Ofrecemos múltiples opciones para tu comodidad</p>
-
+            <div class="payment-container">
                 <div class="payment-methods">
-                    <!-- PayPal -->
-                    <div class="payment-card">
-                        <i class="fab fa-paypal payment-icon"></i>
+                    <div class="payment-card paypal">
+                        <div class="payment-icon">
+                            <i class="fab fa-paypal"></i>
+                        </div>
                         <h3 class="payment-name">PayPal</h3>
-                        <p class="payment-description">Pagos rápidos y seguros a través de PayPal.</p>
+                        <p class="payment-description">Pago seguro y rápido a través de tu cuenta PayPal</p>
+                        <div class="payment-features">
+                            <div class="feature">Protección al comprador</div>
+                            <div class="feature">Pago instantáneo</div>
+                            <div class="feature">Seguro y confiable</div>
+                        </div>
                     </div>
 
-                    <!-- Transferencia Bancaria -->
-                    <div class="payment-card">
-                        <i class="fas fa-university payment-icon"></i>
-                        <h3 class="payment-name">Tarjetas de Crédito</h3>
-                        <p class="payment-description">Aceptamos todas las principales tarjetas con procesamiento
-                            seguro.</p>
+                    <div class="payment-card visa">
+                        <div class="payment-icon">
+                            <i class="fab fa-cc-visa"></i>
+                        </div>
+                        <h3 class="payment-name">VISA</h3>
+                        <p class="payment-description">Paga con tu tarjeta de crédito o débito VISA</p>
+                        <div class="payment-features">
+                            <div class="feature">Aceptado mundialmente</div>
+                            <div class="feature">Protección antifraude</div>
+                            <div class="feature">Pago seguro con 3D Secure</div>
+                        </div>
                     </div>
 
-                    <!-- Visa -->
-                    <div class="payment-card">
-                        <i class="fab fa-cc-visa payment-icon"></i>
-                        <h3 class="payment-name">Visa</h3>
-                        <p class="payment-description">Aceptamos todas las principales tarjetas con procesamiento
-                            seguro.</p>
+                    <div class="payment-card transfer">
+                        <div class="payment-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3 class="payment-name">Transferencia</h3>
+                        <p class="payment-description">Transferencia bancaria directa a nuestra cuenta</p>
+                        <div class="payment-features">
+                            <div class="feature">Sin comisiones</div>
+                            <div class="feature">Seguro bancario</div>
+                            <div class="feature">Confirmación en 24h</div>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 
         <!-- Sección Contacto -->
+        <section id="contacto" class="contact-section">
+            <h2 class="contact-section-title">Contacto</h2>
 
-        <div class="contact-container">
-            <section class="contact-section">
-                <div class="contact-content">
+            <div class="contact-container">
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-phone fa-icon"></i>
+                    </div>
+                    <h3 class="card-title">Teléfono</h3>
+                    <p class="card-info">+34 900 123 456</p>
+                    <p class="card-info">Lunes a Sábado: 9:00 - 20:00</p>
+                </div>
 
-                    <h1 class="contact-title">Contáctanos</h1>
-                    <p class="contact-intro">Estamos aquí para ayudarte. Ponte en contacto con nuestro equipo a través
-                        de cualquiera de estos medios.</p>
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-envelope fa-icon"></i>
+                    </div>
+                    <h3 class="card-title">Email</h3>
+                    <p class="card-info">info@horizone.com</p>
+                </div>
 
-                    <div class="contact-info">
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="method-text">
-                                <h3>Correo electrónico</h3>
-                                <a href="mailto:info@horizone.com">info@horizone.com</a>
-                            </div>
-                        </div>
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-location-dot fa-icon"></i>
+                    </div>
+                    <h3 class="card-title">Ubicación</h3>
+                    <p class="card-info">Calle Principal 123</p>
+                </div>
 
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="method-text">
-                                <h3>Teléfono</h3>
-                                <a href="tel:+1234567890">+1 (234) 567-890</a>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="method-text">
-                                <h3>Dirección</h3>
-                                <p>Calle Principal 123, Ciudad Elegante</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="far fa-clock"></i>
-                            </div>
-                            <div class="method-text">
-                                <h3>Horario</h3>
-                                <p>Lun-Vie: 9:00 - 18:00</p>
-                            </div>
-                        </div>
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-share-nodes fa-icon"></i>
+                    </div>
+                    <h3 class="card-title">Redes Sociales</h3>
+                    <p class="card-info">Síguenos en nuestras redes</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-facebook-f social-icon"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-instagram social-icon"></i>
+                        </a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="nosotros" class="about">
-                <div class="container">
-                    <h2 class="section-title">Sobre Nosotros</h2>
-                    <p class="section-subtitle">Más de una década ofreciendo experiencias excepcionales</p>
+        <!-- Seccion Nosotros -->
 
-                    <div class="about-content">
-                        <div class="about-text animate-from-left">
-                            <h3 class="about-subtitle">Nuestra filosofía</h3>
-                            <p>En Horizone, creemos que cada huésped merece una experiencia personalizada. Desde 2010,
-                                nos hemos dedicado a crear espacios que combinan comodidad, elegancia y calidez.</p>
-                            <p>Nuestro equipo está compuesto por expertos en hospitalidad que anticipan tus necesidades
-                                para ofrecerte un servicio impecable.</p>
-                            <ul class="about-features">
-                                <li><i class="fas fa-check-circle"></i> Atención personalizada 24/7</li>
-                                <li><i class="fas fa-check-circle"></i> Diseño interior exclusivo</li>
-                                <li><i class="fas fa-check-circle"></i> Ubicaciones privilegiadas</li>
-                            </ul>
-                        </div>
-                        <div class="about-image animate-from-left">
-                            <img src="assets/img/about.jpg" alt="About" loading="lazy">
-                        </div>
+        <section id="nosotros" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <p class="section-subtitle">Más de una década ofreciendo experiencias excepcionales</p>
+
+                <div class="about-content">
+                    <div class="about-text animate-from-left">
+                        <h3 class="about-subtitle">Nuestra filosofía</h3>
+                        <p>En Horizone, creemos que cada huésped merece una experiencia personalizada. Desde 2010,
+                            nos hemos dedicado a crear espacios que combinan comodidad, elegancia y calidez.</p>
+                        <p>Nuestro equipo está compuesto por expertos en hospitalidad que anticipan tus necesidades
+                            para ofrecerte un servicio impecable.</p>
+                        <ul class="about-features">
+                            <li><i class="fas fa-check-circle"></i> Atención personalizada 24/7</li>
+                            <li><i class="fas fa-check-circle"></i> Diseño interior exclusivo</li>
+                            <li><i class="fas fa-check-circle"></i> Ubicaciones privilegiadas</li>
+                        </ul>
+                    </div>
+                    <div class="about-image animate-from-left">
+                        <img src="assets/img/about.jpg" alt="About" loading="lazy">
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -500,13 +513,13 @@
                     <h3>Enlaces rápidos</h3>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#nosotros">Nosotros</a>
                         <li><a href="#servicios">Servicios</a></li>
                         <li><a href="#ofertas">Ofertas Especiales</a></li>
                         <li><a href="#galeria">Galería</a></li>
                         <li><a href="#testimonios">Testimonios</a></li>
                         <li><a href="#pagos">Pagos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
                     </ul>
                 </div>
 
@@ -530,4 +543,5 @@
     </footer>
     <script src="JavaScript/script.js"></script>
 </body>
+
 </html>
